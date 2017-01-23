@@ -1,11 +1,14 @@
 # dynamics-crm-ci-clis
-## Overview
 
-Currently released is the WebResourceHelper, the PluginWorkflowHelper is currently under development.
+Command line tools for continuous integration when developing with Microsoft Dynamics CRM / Microsoft Dynamics 365.
+
+## Overview
 
 The WebResourceHelper can be used to upload / update / sync web resources from a folder to a Microsoft Dynamics CRM solution, through a command line interface, and is very useful when you wish to integrate continous integration into your Dynamics CRM Web Resource workflow.
 
-Running the helper requires .NET framework 4.5.2.
+The PluginWorkflowHelper is currently under development.
+
+Running the helpers requires support for .NET framework 4.5.2.
 
 ## Download & Installation
 
@@ -65,6 +68,8 @@ There are some known issues, see the [github issues listing](https://github.com/
 
 In particular, the helper can error if a web resource with a given name already exists in the CRM, but isn't in the specified solution.
 
+# Planned Helpers
+
 ## PluginWorkflowHelper
 
 This is currently under development, as replicating the behaviour of the SDK PluginUploader to create PluginTypes is complex and requires more reverse engineering than previously planned!
@@ -81,7 +86,7 @@ It would be nice if we could create our own version of a solution helper as part
 
 # Compatability
 
-The command line helpers have been tested on Windows 8, running against Dynamics CRM 2016 and CRM Online (8.x) - but will probably work with others.
+The command line helpers have been tested on Windows 8, running against Dynamics CRM 2016 and CRM Online (8.x) - but will probably work with other configurations (in particular, due to the API used, it likely works with CRM 2011 onwards).
 
 # Contributing
 
