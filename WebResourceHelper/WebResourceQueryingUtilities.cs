@@ -26,7 +26,6 @@ namespace WebResourceHelper
 
             query.Criteria = new FilterExpression();
             query.Criteria.AddCondition("sc", "solutionid", ConditionOperator.Equal, solutionId);
-            query.Criteria.AddCondition("ismanaged", ConditionOperator.Equal, false);
             query.Criteria.AddCondition("iscustomizable", ConditionOperator.Equal, true);
 
             var response = (RetrieveUnpublishedMultipleResponse)orgService.Execute(new RetrieveUnpublishedMultipleRequest { Query = query });
