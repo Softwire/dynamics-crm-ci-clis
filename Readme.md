@@ -8,14 +8,14 @@ The WebResourceHelper can be used to upload / update / sync web resources from a
 
 The PluginWorkflowHelper is currently under development.
 
-Running the helpers requires support for .NET framework 4.5.2.
+Running the helpers requires support for .NET framework 4.6.1 (note - recent versions of Dynamics require TLS 1.2, [so we're building against 4.6+](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls)).
 
 ## Download & Installation
 
 The lastest helpers are published [in the github releases section](https://github.com/Softwire/dynamics-crm-ci-clis/releases) - the latest versions are:
 
 
-* *WebResourceHelper* - v1.0.0 - [available here](https://github.com/Softwire/dynamics-crm-ci-clis/releases/tag/v1.0.0-webresource)
+* *WebResourceHelper* - v1.1.0 - [available here](https://github.com/Softwire/dynamics-crm-ci-clis/releases/tag/v1.1.0-webresource)
 * *PluginWorkflowHelper* - not yet released
 
 Download and extract the zip file into a folder.
@@ -91,3 +91,5 @@ The command line helpers have been tested on Windows 8, running against Dynamics
 # Contributing
 
 Any bug reports or pull requests to new/known issues will be appreciated.
+
+## Preparing a release
