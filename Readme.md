@@ -105,5 +105,6 @@ Then build the solution in release mode, and then package up a subset of the fil
 * `microsoft.xrm.client.dll`
 * `Microsoft.Xrm.Sdk.dll`
 * `WebResourceHelper.exe`
+* `WebResourceHelper.exe.config`
 
 Then `git push`, and tag the current commit as `v1.x.y-webresource`, and `git push --tags`.
