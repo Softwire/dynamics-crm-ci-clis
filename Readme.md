@@ -99,7 +99,6 @@ Update the AssemblyVersion and AssemblyFileVersion version numbers in `AssemblyI
 Then build the solution in release mode, and then package up a subset of the files in `WebResourceHelper\bin\Release`. At present (v1.1) of the WebResourceHelper, this is:
 
 * `CrmCommandLineHelpersCore.dll`
-* `JetBrains.Annotations.dll`
 * `Microsoft.Crm.Sdk.Proxy.dll`
 * `Microsoft.IdentityModel.dll`
 * `microsoft.xrm.client.dll`
