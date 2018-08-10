@@ -92,4 +92,18 @@ The command line helpers have been tested on Windows 8, running against Dynamics
 
 Any bug reports or pull requests to new/known issues will be appreciated.
 
-## Preparing a release
+## Preparing a release (of, eg WebResourceHelper)
+
+Update the AssemblyVersion and AssemblyFileVersion version numbers in `AssemblyInfo.cs`.
+
+Then build the solution in release mode, and then package up a subset of the files in `WebResourceHelper\bin\Release`. At present (v1.1) of the WebResourceHelper, this is:
+
+* `CrmCommandLineHelpersCore.dll`
+* `JetBrains.Annotations.dll`
+* `Microsoft.Crm.Sdk.Proxy.dll`
+* `Microsoft.IdentityModel.dll`
+* `microsoft.xrm.client.dll`
+* `Microsoft.Xrm.Sdk.dll`
+* `WebResourceHelper.exe`
+
+Then `git push`, and tag the current commit as `v1.x.y-webresource`, and `git push --tags`.
