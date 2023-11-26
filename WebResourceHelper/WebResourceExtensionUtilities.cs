@@ -42,11 +42,16 @@ namespace WebResourceHelper
                 case "map":
                 // These are font files. The closest web resource type is JScript. Hopefully browsers will be able to understand this mime type correctly.
                 case "eot":
-                case "svg":
                 case "ttf":
                 case "woff":
                 case "woff2":
                     return WebResourceWebResourceType.Script_JScript;
+
+                case "svg":
+                    return WebResourceWebResourceType.Vector_Format;
+
+                case "resx":
+                    return WebResourceWebResourceType.String_Resx;
 
                 default:
                     throw new ArgumentOutOfRangeException($"\"{extension.ToLower()}\" is not recognized as a valid file extension for a Web Resource.");
