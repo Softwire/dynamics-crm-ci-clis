@@ -23,7 +23,7 @@ namespace WebResourceHelper
 
     class WebResourcePartitioner
     {
-        private static readonly Regex InvalidWebResourceNameRegex = new Regex(@"[^a-z0-9A-Z_\\./]|[/]{2,}", (RegexOptions.Compiled | RegexOptions.CultureInvariant));
+        private static readonly Regex InvalidWebResourceNameRegex = new Regex(@"[^a-z0-9A-Z-_\\./]|[/]{2,}", (RegexOptions.Compiled | RegexOptions.CultureInvariant));
 
         private readonly WebResourceHelperOptions options;
 
