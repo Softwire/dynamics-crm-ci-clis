@@ -14732,6 +14732,12 @@ public enum WebResourceWebResourceType
 	
 	[System.Runtime.Serialization.EnumMemberAttribute()]
 	ICOformat = 10,
+
+	[System.Runtime.Serialization.EnumMemberAttribute()]
+	Vector_Format = 11,
+
+	[System.Runtime.Serialization.EnumMemberAttribute()]
+	String_Resx = 12,
 }
 
 [System.Runtime.Serialization.DataContractAttribute()]
